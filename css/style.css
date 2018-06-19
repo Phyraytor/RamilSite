@@ -1,0 +1,595 @@
+
+
+img
+{
+  
+  max-width: 100%;
+  height : auto;
+}
+
+
+button, input[type=submit] {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #FFFFFF;
+  outline: none;
+  border: 2px solid #2B4CF6;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #000080;
+  background: linear-gradient(#7575AB, #384AA4 48%, #0205AA 52%, #171FA0);
+}
+button, input[type=submit]:active {
+  /*top: .1em;
+  left: .1em;*/
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Cap____***************************
+
+ ------------------------------------------------------------------*/
+header 
+{
+  position: absolute;
+  background: radial-gradient(#000000, #4C4949);
+  top: 0;
+  left: 0;
+    height: 17%;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1
+{
+  color: rgb(0, 114, 188);
+  margin: 0.7% 0%;
+  text-align: center;
+  top: 0;
+  font-family: Forum;
+  font-size: 2em;
+}
+
+header p
+{
+  color: rgb(0, 174, 239);
+  text-align: center;
+  font-family: Lobster;
+  font-size: 1.2em;
+    font-style: italic;
+}
+
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Main____***************************
+
+ ------------------------------------------------------------------*/
+.main
+{
+    position: absolute;
+    background-image:  url('img/cardistry.jpg'); 
+    top: 17%;
+    left: 0;
+    height: 77%;
+    width: 100%;
+  z-index: 1;
+  
+} 
+
+.main img
+{
+  width: 100%;
+  position: absolute;
+}
+
+.application
+{
+   position: absolute;
+   border-radius: 10px; 
+   padding: 1%;
+   background: linear-gradient(to top, #2D6AA1, #000028);
+   opacity: 0.8;
+   padding: 0%;
+   top : 26%;
+   left : 64%;
+   width: 20%;
+   height: 40%;
+   z-index: 5;
+
+}
+
+.application p
+{
+   text-align: center;
+   color: white;
+   font-size: 2em;
+   margin : 3% 0%;
+}
+
+
+.application input[type=text], input[type=email]
+{
+   border-radius: 5px;
+   margin : 2% 20%;
+   height: 23px;
+   width: 60%;
+}
+
+.application input[type=submit]
+{
+   width: 63%;
+   margin : 2% 20%;
+}
+
+.description
+{
+   position: absolute;
+   padding: 0%;
+   height: 40%;
+   width: 52%;
+   top: 30%;
+   left: 10%; 
+   z-index: 3;
+}
+
+.topDes
+{
+  position: absolute;
+  background: linear-gradient(to top, #042E53,  #000000);
+  opacity: 0.95;
+  top: 0;
+  left: 0;
+  padding: 0%;
+  height: 20%;
+  width: 100%;
+  z-index: 6;
+}
+
+.topDes h3
+{
+    text-align: center;
+    color: rgb(172, 172, 172);
+    margin : 1%;
+    font-family: Georga;
+    font-size: 1.45em;
+}
+
+.botDes
+{ 
+  position: absolute;
+  background: linear-gradient(to top, #042E53,  #000000);
+  opacity: 0.95;
+  top: 20%;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  z-index: 4;
+}
+
+.botDes p
+{
+  color: rgb(183, 183, 183);
+  margin : 1%;
+    font-family: Lobster;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+
+@media only screen and (max-width : 1245px)
+{
+   .description
+    {
+      
+      height : 52%;
+    }
+    .topDes
+    {
+      
+      height : 22%;
+    }
+    .botDes
+    {
+      
+      height : 48%;
+      top: 22%;
+    }
+
+    .application
+    {
+       top : 28%;
+       width: 25%;
+    }
+
+}
+
+@media only screen and (max-width : 890px)
+{
+   .description
+    {
+      
+      height : 78%;
+
+    }
+    .topDes h3
+    {
+        margin: 5%  1%;
+  
+    }
+    .botDes p
+    {
+       
+         margin: 5%  1%;
+    }
+    .application
+    {
+       top : 30%;
+       width: 30%;
+    }
+}
+
+@media only screen and (max-width : 665px)
+{
+   .description
+    {
+      top: 25%;
+      height : 114%;
+
+    }
+    .topDes h3
+    {
+        margin: 5%  1%;
+  
+    }
+    .topDes
+    {
+      
+      height : 17%;
+    }
+    .botDes 
+    {
+       
+        top: 17%;
+    }
+
+    .botDes p
+    {
+       
+         margin: 7%  1%;
+    }
+    .application
+    {
+       top : 32%;
+       width: 35%;
+    }
+}
+
+/*-------------------------------------------------------------------
+
+ *****************************____Props____**************************
+
+ ------------------------------------------------------------------*/ 
+.props
+{
+  position: absolute;
+    background: radial-gradient(rgb(27, 64, 97), rgb(5, 11, 16) );
+    top: 94%;
+    left: 0%;
+    height: 85%;
+    width: 100%;
+    z-index: 4;
+}
+
+.props p
+{
+    margin: 8% 0%;
+    font-family: Forum;
+    font-size: 3.5em;
+
+}
+.skill
+{
+  
+    position: absolute;
+   /* background-color: white; /*Нужно для настройки*/
+    width: 76%;
+    top: 35%;
+    left: 15%;
+    padding: 0%;
+}
+
+.skill div
+{
+    /*position: absolute;*/
+  background: linear-gradient(to top, rgb(15, 47, 115), rgb(16, 61, 131));
+  display: inline-block;
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  opacity: 0.85;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0.6%;
+  padding: 1%;
+  
+}
+
+.skill  img
+{
+   height: 200px;
+}
+.skill h5, p
+{
+     text-align: center;
+     color: white;
+}
+
+.skill h5
+{
+  margin: 2% 0%;
+  font-family: Georgia;
+  font-size: 1.2em; 
+}
+
+.skill p
+{
+  font-family: Georgia;
+  font-size: 0.97em; 
+}
+
+
+@media only screen and (max-width : 975px)
+{
+   .skill div
+   {
+      width: 40%;
+      margin: 2%;
+
+   }
+   .skill
+   {
+      top: 18%;
+   }
+   .props
+   {
+     height: 120%;
+   }
+   .quesion
+   {
+      top: 214%;
+   }
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Quesion____************************
+
+ ------------------------------------------------------------------*/ 
+
+.fon
+{
+    position: absolute;
+    background-color: black;
+    top: 179%;
+    left: 0;
+    height: 90%;
+    width: 100%;
+
+}
+
+.quesion
+{
+  font-family: forum;
+  font-size: 3em;
+  z-index: 2;
+}
+
+.FonImg
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+} 
+
+.variant
+{
+    position: absolute;
+   /* background-color: yellow; /*Для редактирования */
+    top: 25%;
+    left: 15%;
+    height: 60%;
+    width: 80%;
+
+}
+
+
+.SideLeft
+{
+ /* background-color: black;*/ /*Для редактирования */
+  position: absolute;
+  top : 0;
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+
+.SideLeft div
+{
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  margin: 0% 4% 8%;
+  padding: 1%;
+  height: 47%;
+
+}
+
+.SideLeft  img
+{
+  max-height: 100%;
+  float: right;
+  margin: 0 0 0 3%;
+  border-radius: 5px;
+}
+
+
+.SideRight
+{
+ /* background-color: black;/*Для редактирования */
+  position: absolute;
+  top : 0;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+}
+
+.SideRight div
+{
+
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  margin: 0% 4% 8%;
+  padding: 1% ;
+  height: 47%;
+
+}
+
+.SideRight  img
+{
+  max-height: 100%;
+  float: left;
+  margin: 0 3% 0 0;
+  border-radius: 5px;
+}
+
+
+.variant p, hr, h4
+{
+    color: white;
+    text-align: center;
+}
+
+.variant h4
+{
+    margin: 1% 1% 1%;
+    font-family: Georgia;
+    font-size: 1.15em;
+}
+.variant p
+{
+    margin: 1% 1% 1%;
+    font-family: Georgia;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width : 1260px)
+{
+  
+   .variant
+   {
+     left : 1%;
+     width:  97%;
+   }
+   .variant h4
+   {
+      font-size: 1.1em;
+   }
+  .variant p
+  {
+
+    font-size: 1em;
+  }
+  .variant img
+   {
+      margin: 1% 1% 0;
+      max-width: 250px;
+   }
+
+}
+
+@media only screen and (max-width : 975px)
+{
+  
+   .fon
+   {
+      top: 214%;
+   }
+
+   .variant img
+   {
+      margin: 3% 1% 0;
+      max-width: 200px;
+   }
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Footer____*************************
+
+ ------------------------------------------------------------------*/
+  
+footer
+{
+  position: absolute;
+    background: radial-gradient( rgb(50, 49, 49), rgb(0, 0, 0));
+    padding: 1% 0 1% 10%;
+    top: 269%;
+    left: 0;
+    height: 20%;
+    width: 90%;
+}
+
+footer p
+{
+  color: white;
+  font-family: Georga;
+  font-size: 2.5em;
+  margin: 0%;
+}
+
+footer div
+{
+  display: inline-block;
+  background: radial-gradient(#000031, #000000);
+  margin: 1%;
+  padding: 1%;
+  border-radius: 10%;
+ 
+}
+
+
+footer button
+{
+  position: absolute;
+  top: 34%;
+  left: 70%;
+  width: 20%;
+  height:  30%;
+  font-size: 1.4em;
+}
+
+
+@media only screen and (max-width : 975px)
+{
+  
+   footer
+   {
+      top: 299%;
+      height: 40%;
+   }
+
+   footer div
+   {
+      margin: 1% 5%;
+   }
+
+
+}

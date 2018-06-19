@@ -1,0 +1,960 @@
+
+body
+{
+  margin: 0;
+}
+
+div, header, footer
+{
+ display: inline-block;
+}
+.Block, header, footer
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
+
+img
+{
+  
+  max-width: 100%;
+  height : auto;
+}
+
+/*Кнопку скачал из интернета, только цвет поменял*/
+button, input[type=submit] 
+{
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #FFFFFF;
+  outline: none;
+  border-radius: 5px;
+}
+button, input[type=submit]:active 
+{
+
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.button--active:hover
+{
+  background: linear-gradient(#8585BB, #485AB4 48%, #1215BA 52%, #272FB0);
+}
+
+.button--active
+{ 
+  border: 1px solid #2B4CF6;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #000080;
+  background: linear-gradient(#7575AB, #384AA4 48%, #0205AA 52%, #171FA0);
+  cursor: pointer;
+} 
+
+.button--disabled
+{ 
+  border: 1px solid #1C1C1C;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #000000;
+  background: linear-gradient(#454545, #5E5E5E 48%, #121212 52%, #2C2C2C); 
+} 
+
+/*-------------------------------------------------------------------
+
+ *****************************____Cap____***************************
+
+ ------------------------------------------------------------------*/
+header 
+{
+  background: radial-gradient(#000000, #4C4949);
+}
+
+header h1
+{
+  margin: 0.7% 0%;
+  color: #0072BC;
+  text-align: center;
+  font-family: Forum;
+  font-size: 2em;
+  animation-name: test-animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+header p
+{
+  color: #00AEDF;
+  text-align: center;
+  font-family: Lobster;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+@keyframes test-animation 
+{
+  0%, 30%, 100% 
+  {
+    letter-spacing: 0em;
+  }
+  20% 
+  {
+    letter-spacing: 0.551em;
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+  @keyframes test-animation 
+  {
+    0%, 65%, 100% 
+    {
+      letter-spacing: 0em;
+    }
+    80% 
+    {
+      letter-spacing: 0.17em;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+  header h1
+  {
+    animation: none;
+  } 
+}
+
+@media only screen and (max-width: 290px)
+{
+    header h1
+    {
+        margin: 0.2% 0%;
+        font-size: 1.5em;
+    }
+
+    header p
+    {
+        font-size: 0.98em;
+    }
+
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Main____***************************
+
+ ------------------------------------------------------------------*/
+
+
+.main
+{
+  background-color: black; 
+  background-image:  url('img/cardistry.jpg');
+  padding: 0% 0 1%;
+} 
+	
+.application
+{
+  background: linear-gradient(to top, #2D6AA1, #000028);
+  border-radius: 10px; 
+  opacity: 0.8;
+  margin:  10% 10% 10% 0%;
+  padding: 1%;
+  width: 20%;
+  animation-name: Qanimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite; 
+
+}
+
+.application p
+{
+  margin : 3% 0%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+
+.application input[type=text], input[type=email], input[type=tel]
+{
+  margin : 2% 20%;
+  border-radius: 5px;
+  height: 23px;
+  width: 60%;
+}
+
+.checkbox__text
+{
+  
+  font-family: Georgia, Cambria, Sans-serif,   monospace,   Impact, Century;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.checkbox__text:hover
+{
+  
+  color: #0000A3;
+}
+    
+.application input[type=submit]
+{
+  margin : 2% 20%; 
+  width: 63%;
+}
+
+.description
+{
+  display: inline-block;	
+  margin: 15% 2% 10% 9%;
+  padding: 0%;
+  width: 52%;
+}
+
+.description div
+{
+  background: linear-gradient(to top, #042E53,  #000000);
+  opacity: 0.95;
+  padding: 0%;
+  width: 100%;
+}
+
+.description h3
+{
+  margin : 1%;
+  text-align: center;
+  color: #ACACAC;
+  font-family: Georga;
+  font-size: 1.45em;
+}
+
+.description p
+{
+  margin : 1%;
+  color: #B7B7B7;
+  font-family: Lobster;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+@keyframes Qanimation 
+{
+    
+    0% 
+    {
+      transform: rotate(0deg);
+    }
+
+    15%, 100%  
+    {
+      transform: rotate(360deg);
+    }
+
+}
+
+@media only screen and (max-width : 900px)
+{
+
+  .application
+  {
+    width: 32%;
+    margin:  10% 0%;
+    animation: none;
+  }
+  .application input[type=text], input[type=email] 
+  {
+    margin: 3% 20%;
+  }
+}
+
+@media only screen and (max-width : 600px)
+{
+  .application
+  {
+  	width: 48%;
+    margin:  0;
+  }
+
+  .description
+  {
+  	width: 49%;
+    margin:  0%;
+  } 
+
+  .main
+  {
+  	padding: 0;
+  }
+}
+
+@media only screen and (max-width : 450px)
+{
+  .application
+  {
+  	width: 100%;
+  	border-radius: 0;
+  }
+
+  .description
+  {
+  	width: 100%;
+  }
+
+}
+
+@media only screen and (max-width : 230px)
+{
+  .description h3
+  {
+  	 font-size: 1em;
+  }
+  .description p
+  {
+  	 font-size: 1em;
+  }
+  .application p
+  {
+  	 font-size: 1.5em;
+  }
+  .application input[type=text], input[type=email]
+  {
+  	 width: 85%;
+  	 margin: 2% 4%;
+  }
+}
+
+/*-------------------------------------------------------------------
+
+ *****************************____Props____**************************
+
+ ------------------------------------------------------------------*/ 
+
+.props
+{
+  background: radial-gradient(#1B4051, #050B10);
+  padding: 2% 0;
+}
+
+.props p
+{
+  margin: 4% 0%;
+  font-family: Forum;
+  font-size: 3.5em;
+}
+
+.skill
+{
+  margin: 1% 0 10% 7%;
+  padding: 0%;
+  width: 90%;
+}
+
+.skill div
+{
+  background: linear-gradient(to top, #0F2F73 #103D93);
+  box-shadow: 0 0 0 2.5px #3D6AA1;
+  opacity: 0.85;
+  border-radius: 5px;
+  width: 20%;
+  margin: 1%;
+  padding: 1%;
+}
+
+
+.skill h5, p
+{
+  text-align: center;
+  color: white;
+  font-family: Georgia;
+}
+
+.skill h5
+{
+  margin: 2% 0%;
+  font-size: 1.2em; 
+}
+
+.skill p
+{
+  font-size: 0.97em; 
+}
+
+
+.BlockDown
+{
+  animation-name: Downanimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite; 
+}
+
+
+
+@keyframes Downanimation 
+{
+    
+    0%, 30%, 100% 
+    {
+      transform: translateY(0);
+    }
+
+    15% 
+    {
+      transform: translateY(90px);
+    }
+}
+
+@media only screen and (max-width : 1053px)
+{
+  .skill p
+  {
+    font-size: 1.039em; 
+  }
+}
+
+@media only screen and (max-width : 900px)
+{
+  .skill div
+  {
+  	width: 45%;
+  	margin: 1%; 
+  }
+  .skill
+  {
+  	margin: 1% 0 10% 5%;
+  }
+}
+
+@media only screen and (max-width : 546px)
+{
+  .skill p
+  {
+    font-size: 1.098em; 
+  }
+}
+
+@media only screen and (max-width : 450px)
+{
+  .skill div
+  {
+  	width: 81%;
+  	margin: 1%; 
+  }
+  .skill
+  {
+  	margin: 1% 0 10% 11%;
+  }
+}
+
+@media only screen and (max-width : 250px)
+{
+  .props p
+  {
+    font-size: 1.5em;
+  }
+  .skill h5
+  {
+  	font-size: 0.9em;
+  }
+  .skill p
+  {
+  	font-size: 1em;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------
+
+ *****************************************____Quesion____***************************************
+
+ ---------------------------------------------------------------------------------------------*/ 
+
+.fon
+{
+  background-color: black;
+  background-image: url('img/fon.jpg');
+  padding: 2% 0;
+}
+
+.quesion
+{
+  margin: 0;
+  font-family: forum;
+  font-size: 3em;
+}
+
+
+.fon div
+{
+  width: 45%;
+  box-shadow: 0 0 0 2.5px #2D6AA1;
+  margin: 1% 0% 1% 4%;
+}
+
+.fon img
+{
+  max-width: 50%;
+}
+
+.SideLeft img
+{
+  float: right;
+}
+
+.SideRight img
+{
+  float: left;
+}
+
+
+.fon div p, hr, h4
+{
+  text-align: center;
+  color: white;
+  font-family: Georgia;
+}
+
+.fon hr
+{
+  width: 47%;
+}
+
+.fon div h4
+{
+  margin: 5% 1% 1%;
+  font-size: 1.15em;
+}
+
+.fon div p
+{
+  margin: 1% 1% 1%;
+  font-size: 1.25em;
+}
+
+
+.BlockCircle
+{
+   /* animation-name: Circleanimation;*/
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+}
+
+.hinge.infinite
+{
+  animation-fill-mode: backwards;
+  animation-duration: 7s; 
+}
+
+
+@media only screen and (max-width: 1281px)
+{
+  .fon div p
+  {
+    font-size: 1.333em;
+  }
+}
+
+@media only screen and (max-width: 1119px)
+{
+  .fon div p
+  {
+    font-size: 1.16em;
+  }
+}
+
+
+@media only screen and (max-width: 976px)
+{
+  .fon div h4
+  {
+  	font-size: 1.07em;
+  }
+  .fon div p
+  {
+    font-size: 1.06em;
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+
+  .hinge.infinite
+  {
+    animation:none;
+  }
+  .fon div
+  {
+    width: 96%;
+    margin: 1% 0% 1% 2%; 
+  }
+  .fon img
+  {
+  	max-width: 50%;
+  }
+  .fon div h4
+  {
+  	font-size: 1.5em;
+  }
+  .fon div p
+  {
+    font-size: 1.49em;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .fon div h4
+  {
+  	font-size: 1.1em;
+  }
+  .fon div p
+  {
+    font-size: 1.116em;
+  }
+}
+@media only screen and (max-width: 450px)
+{
+  .fon img
+  {
+  	max-width: 100%;
+  	float: none;
+  }
+  .fon div
+  {
+  	width: 70%;
+  	margin: 2% 0% 1% 15%; 
+  }
+}
+
+@media only screen and (max-width: 220px)
+{
+  .quesion
+  {
+    font-size: 2em;
+  }
+  .fon div h4
+  {
+  	font-size: 0.9em;
+  }
+  .fon div p
+  {
+    font-size: 0.8em;
+  }
+
+}
+/*-------------------------------------------------------------------
+
+ *****************************____Footer____*************************
+
+ ------------------------------------------------------------------*/
+  
+footer
+{
+  background: radial-gradient(#323131, #000000);
+}
+
+footer p
+{
+  margin: 0%;
+  color: white;
+  font-family: Georga;
+  font-size: 2.17em;
+}
+
+footer div
+{
+  display: inline-block;
+  background: radial-gradient(#000031, #000000);
+  margin: 1% 0% 1% 8%;
+  padding: 1%;
+  border-radius: 10%;
+}
+
+
+footer button
+{
+  position: absolute;
+  top: 34%;
+  left: 70%;
+  width: 20%;
+  height:  30%;
+  font-size: 1.4em;
+}
+
+
+.BlockContact
+{
+  animation-name: Contactanimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes Contactanimation 
+{
+    
+    0%, 70%, 100%
+    {
+      transform:  translateX(0px);
+    }
+
+    85% 
+    {
+        transform:  translateX(-60px);
+    }
+     
+
+}
+
+@media only screen and (max-width : 991px)
+{
+  
+   footer div
+   {
+      margin: 5% 3%;
+   }
+
+
+}
+
+
+@media only screen and (max-width : 450px)
+{
+    footer p
+    {
+
+      font-size: 1.65em;
+
+    }
+
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+            transform:  translateX(-40px); 
+          
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+
+}
+
+@media only screen and (max-width : 350px)
+{ 
+    footer p
+    {
+      font-size: 1em;
+    }
+
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+
+          transform:  translateX(-25px); 
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+
+}
+@media only screen and (max-width : 220px)
+{
+
+    footer p
+    {
+
+      font-size: 0.68em;
+    }
+
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+
+         transform:  translateX(-15px); 
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Konf____*************************
+
+ ------------------------------------------------------------------*/
+  
+.overlay
+{
+  position: fixed;
+  background-color: black;
+  opacity: 0.65;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.konf
+{
+  position: absolute;
+  background-color: white;
+  opacity: 1;
+  padding: 5% 3% 0 ;
+  width: 50%;
+  height: 170%;
+  top: 20%;
+  left: 25%;
+  z-index: 12;
+  border-radius: 5%;
+}
+
+.konf__close
+{
+  position: absolute;
+  top: 2%;
+  left: 94%;
+  z-index: 13;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+
+.konf__text
+{
+  font-size: 1.25em;    
+}
+
+@media only screen and (max-width: 1359px)
+{
+  .konf
+  {
+
+    width: 70%;
+    height: 170%;
+    top: 15%;
+    left: 15%;
+
+  }
+}
+
+
+
+@media only screen and (max-width: 975px)
+{
+  .konf
+  {
+
+    width: 80%;
+    height: 180%;
+    top: 10%;
+    left: 10%;
+
+  }
+  .konf__text
+  {
+    font-size: 1.1em;    
+  }
+
+}
+
+@media only screen and (max-width: 654px)
+{
+  .konf
+  {
+
+    width: 100%;
+    height: 180%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    padding:  5% 0% 0 1% ;
+  }
+  .konf__close
+  {
+    position: absolute;
+    top: 0.5%;
+    left: 85%;
+    z-index: 13;
+    font-size: 1.75em;
+    cursor: pointer;
+  }
+  .konf__text
+  {
+    font-size: 1em;   
+  }
+
+}
+
+@media only screen and (max-width: 450px)
+{
+  .konf
+  {
+    height: 260%;
+    padding:  11% 0% 0 1% ;
+  }
+
+
+}
+
+@media only screen and (max-width: 300px)
+{
+  .konf
+  {
+    height: 400%;
+  }
+
+
+}

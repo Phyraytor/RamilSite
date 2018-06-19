@@ -1,0 +1,1359 @@
+
+body
+{
+  margin: 0;
+}
+img
+{
+  
+  max-width: 100%;
+  height : auto;
+}
+
+/*Кнопку скачал из интернета, только цвет поменял*/
+button, input[type=submit] 
+{
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 2.5em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #FFFFFF;
+  outline: none;
+  border: 2px solid #2B4CF6;
+  border-radius: 5px;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #000080;
+  background: linear-gradient(#7575AB, #384AA4 48%, #0205AA 52%, #171FA0);
+}
+button, input[type=submit]:active 
+{
+  /*top: .1em;
+  left: .1em;*/
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Cap____***************************
+
+ ------------------------------------------------------------------*/
+header 
+{
+  display: inline-block;
+  background: radial-gradient(#000000, #4C4949);
+  width: 100%;
+}
+
+header h1
+{
+  margin: 0.7% 0%;
+  color: #0072BC;
+  text-align: center;
+  font-family: Forum;
+  font-size: 2em;
+ /* animation-name: test-animation;*/
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+header p
+{
+  color: #00AEDF;
+  text-align: center;
+  font-family: Lobster;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+@keyframes test-animation 
+{
+  0% 
+  {
+    font-size: 2em;
+  }
+  65% 
+  {
+    font-size: 2em;
+  }
+  80% 
+  {
+    font-size: 3em;
+  }
+  100% 
+  {
+    font-size: 2em;
+  }
+}
+
+
+@media only screen and (max-width: 665px)
+{
+    @keyframes test-animation 
+    {
+        0% 
+        {
+          font-size: 2em;
+        }
+        65% 
+        {
+          font-size: 2em;
+        }
+        80% 
+        {
+          font-size: 2.5em;
+        }
+        100% 
+        {
+          font-size: 2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px)
+{
+  @keyframes test-animation 
+  {
+    0% 
+    {
+      font-size: 2em;
+    }
+    65% 
+    {
+      font-size: 2em;
+    }
+    80% 
+    {
+      font-size: 1.7em;
+    }
+    100% 
+    {
+      font-size: 2em;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 290px)
+{
+    header h1
+    {
+        margin: 0.2% 0%;
+        font-size: 1.5em;
+    }
+
+    header p
+    {
+        font-size: 0.98em;
+    }
+
+    @keyframes test-animation 
+    {
+        0% 
+        {
+          font-size: 1.5em;
+        }
+        65% 
+        {
+          font-size: 1.5em;
+        }
+        80% 
+        {
+          font-size: 1.3em;
+        }
+        100% 
+        {
+          font-size: 1.5em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------
+
+ *****************************____Main____***************************
+
+ ------------------------------------------------------------------*/
+
+.main
+{
+  display: inline-block;
+  background-color: black; 
+  background-image:  url('img/cardistry.jpg');
+  padding: 0% 0 1%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+	
+.application
+{
+  display: inline-block;
+  background: linear-gradient(to top, #2D6AA1, #000028);
+  border-radius: 10px; 
+  opacity: 0.8;
+  margin:  10% 10% 10% 0%;
+  padding: 1%;
+  width: 20%;
+  animation-name: Qanimation;
+  animation-duration: 9s;
+  animation-iteration-count: infinite; 
+
+}
+
+.application p
+{
+  margin : 3% 0%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+
+
+.application input[type=text], input[type=email]
+{
+  margin : 2% 20%;
+  border-radius: 5px;
+  height: 23px;
+  width: 60%;
+}
+
+.application input[type=submit]
+{
+  margin : 2% 20%; 
+  width: 63%;
+}
+
+.description
+{
+  display: inline-block;	
+  margin: 15% 2% 10% 9%;
+  padding: 0%;
+  width: 52%;
+}
+
+.topDes
+{
+  display: inline-block;
+  background: linear-gradient(to top, #042E53,  #000000);
+  opacity: 0.95;
+  padding: 0%;
+  width: 100%;
+}
+
+.topDes h3
+{
+  margin : 1%;
+  text-align: center;
+  color: #ACACAC;
+  font-family: Georga;
+  font-size: 1.45em;
+}
+
+.botDes
+{ 
+  display: inline-block;
+  background: linear-gradient(to top, #042E53,  #000000);
+  opacity: 0.95;
+  width: 100%;
+}
+
+.botDes p
+{
+  margin : 1%;
+  color: #B7B7B7;
+  font-family: Lobster;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+@keyframes Qanimation 
+{
+    
+    0% 
+    {
+      transform: rotate(0deg);
+    }
+
+    85% 
+    {
+      transform: rotate(0deg);
+    }
+    
+    100% 
+    {
+      transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width : 1245px)
+{
+   .description
+    {
+      
+      height : 52%;
+    }
+    .topDes
+    {
+      
+      height : 22%;
+    }
+    .botDes
+    {
+      
+      height : 48%;
+      top: 22%;
+    }
+
+    .application
+    {
+       top : 28%;
+       width: 25%;
+    }
+
+}
+
+@media only screen and (max-width : 890px)
+{
+   .description
+    {
+      
+      height : 78%;
+
+    }
+    .topDes h3
+    {
+        margin: 5%  1%;
+  
+    }
+    .botDes p
+    {
+       
+         margin: 5%  1%;
+    }
+    .application
+    {
+       top : 30%;
+       width: 35%;
+       height: 52%;
+       animation: none;
+    }
+    .application input[type=text], input[type=email] 
+    {
+       margin: 7% 20%;
+    }
+}
+
+@media only screen and (max-width : 665px)
+{
+   .description
+    {
+     
+      width: 62%;
+      left: 1%;
+
+    }
+    .topDes h3
+    {
+        margin: 1%  1%;
+  
+    }
+    .topDes
+    {
+      
+      height : 19%;
+    }
+    .botDes 
+    {
+        height: 50%;
+        top: 19%;
+    }
+
+    .botDes p
+    {
+         font-size: 1.25em;
+         margin: 1%  1%;
+    }
+    .application 
+    {
+       top : 30%;
+       width: 35%;
+    }
+}
+
+
+@media only screen and (max-width : 450px)
+{
+   .description
+    {
+     
+      top: 0%;
+      left: 0;
+      width: 100%;
+      height: 86.6%;
+
+    }
+
+    .application 
+    {
+       top : 58%;
+       left: 0;
+       width: 100%;
+       height: 40%;
+    }
+
+  
+    .topDes
+    {
+      
+      height : 17%;
+    }
+
+    .botDes 
+    {
+
+        top: 17%;
+    }
+
+    .botDes p
+    {
+
+        margin: 10% 0;
+    }
+
+    
+    .application input[type=text], input[type=email] 
+    {
+       margin: 1.5% 20%;
+    }
+}
+
+@media only screen and (max-width : 268px)
+{
+
+    .main
+    {
+      background-image: url('');
+    }
+
+    .description
+    {
+     
+      top: 0%;
+      left: 0;
+      width: 100%;
+      height: 92.45%;
+
+    }
+
+    .application 
+    {
+       top : 62%;
+       left: 0;
+       width: 100%;
+       height: 36%;
+    }
+
+    .topDes
+    {
+      height: 12.6%;
+    }
+  
+    .topDes h3
+    {
+      margin : 8% 0;
+      font-size : 0.9em;
+    }
+
+    .botDes 
+    {
+        height: 54.4%;
+        top: 12.6%;
+    }
+
+    .botDes p
+    {
+        font-size : 0.9em;
+        margin: 30% 0%;
+    }
+
+    
+    .application input[type=text], input[type=email], input[type=submit]
+    {
+       width: 90%;
+       margin: 1.5% 5%;
+    }
+}
+
+/*-------------------------------------------------------------------
+
+ *****************************____Props____**************************
+
+ ------------------------------------------------------------------*/ 
+.props
+{
+  display: inline-block;
+  background: radial-gradient(#1B4051, #050B10);
+  padding: 2%;
+  width: 100%;
+}
+
+.props p
+{
+  margin: 4% 0%;
+  font-family: Forum;
+  font-size: 3.5em;
+}
+
+.skill
+{
+  
+  display: inline-block;
+  /* background-color: white; /*Нужно для настройки*/
+  margin: 1% 10% 10%;
+  padding: 0%;
+  width: 76%;
+}
+
+.skill div
+{
+  display: inline-block;
+  background: linear-gradient(to top, #0F2F73 #103D93);
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  opacity: 0.85;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0.6%;
+  padding: 1%;
+}
+
+.skill  img
+{
+  height: 200px;
+}
+.skill h5, p
+{
+  text-align: center;
+  color: white;
+}
+
+.skill h5
+{
+  margin: 2% 0%;
+  font-family: Georgia;
+  font-size: 1.2em; 
+}
+
+.skill p
+{
+  font-family: Georgia;
+  font-size: 0.97em; 
+}
+
+
+.BlockDown
+{
+  /*animation-name: Downanimation;*/
+  animation-duration: 7s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes Downanimation 
+{
+    
+    0% 
+    {
+      transform: translateY(0);
+    }
+
+    70% 
+    {
+      transform: translateY(0);
+    }
+    
+    85% 
+    {
+       transform: translateY(90px);
+    }
+    100% 
+    {
+       transform: translateY(0);
+    }
+}
+
+
+@media only screen and (max-width : 1342px)
+{
+
+  .skill
+   {
+
+      width: 86%;
+      left: 12%;
+   }
+}
+
+@media only screen and (max-width : 1188px)
+{
+  .skill p
+  {
+    font-size: 1.032em; 
+  }
+
+}
+
+
+@media only screen and (max-width : 991px)
+{
+   .skill div
+   {
+      width: 40%;
+      margin: 2%;
+
+   }
+   .skill
+   {
+      top: 16%;
+      width: 86%;
+      left: 10%;
+   }
+   .props
+   {
+     height: 130%;
+   }
+   .quesion
+   {
+      top: 214%;
+   }
+   .skill  img
+   {
+      height: 230px;
+   }
+.
+}
+
+@media only screen and (max-width : 639px)
+{
+
+   .skill  img
+   {
+      height: 170px;
+   }
+
+  .skill p
+  {
+    font-size: 1.096em; 
+  }
+
+}
+
+@media only screen and (max-width : 450px)
+{
+    .props 
+    {
+
+        height: 200%;
+    }
+    .props p
+    {
+
+       margin: 0%;
+    }
+
+   .skill  
+   {
+     /*width: 98%;*/
+     top: 8.2%;
+     left: 12%;
+   }
+   .skill  img
+   {
+     height: 230px;
+   }
+
+  .skill div
+  {
+    width: 80%;
+  }
+  .BlockDown
+  {
+    animation-name: none;
+  }
+}
+
+
+@media only screen and (max-width : 350px)
+{
+
+    .props 
+    {
+
+       /* height: 170%;*/
+
+    }
+   .props p
+    {
+        margin: 3% 0%;
+        font-size: 1.9em;
+
+    }
+   .skill  img
+   {
+     height: 212px;
+   }
+   
+
+   .skill  p
+   {
+      font-size: 1.2em;
+
+   }
+   .skill  h5
+   {
+
+      font-size: 1em;
+   }
+
+   .skill 
+   {
+      padding: 0;
+      left: 3%;
+      width: 110%;
+      top: 6%;
+   }
+
+}
+
+
+@media only screen and (max-width : 220px)
+{
+
+    .props 
+    {
+
+        height: 172%;
+
+    }
+    .skill img
+    {
+      height: 140px;
+    }
+    
+}
+
+
+
+/*----------------------------------------------------------------------------------------------
+
+ *****************************************____Quesion____***************************************
+
+ ---------------------------------------------------------------------------------------------*/ 
+
+.fon
+{
+  display: inline-block;
+  background-color: black;
+  background-image: url('img/fon.jpg');
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.quesion
+{
+  margin: 0;
+  font-family: forum;
+  font-size: 3em;
+}
+
+.FonImg
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+} 
+
+.variant
+{
+  display: inline-block;
+  /* background-color: yellow; /*Для редактирования */
+  margin: 4% 9% 0;
+  width: 80%;
+}
+
+
+.SideLeft, .SideRight
+{
+ /* background-color: black;*/ /*Для редактирования */
+  display: inline-block;
+  width: 49%;
+}
+
+.SideLeft div
+{
+  display: inline-block;
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  margin: 0% 4% 8%;
+  padding: 1%;
+  height: 47%;
+
+}
+
+.SideLeft  img
+{
+  max-width: 50%;
+  float: right;
+  margin: 0 0 0 3%;
+  border-radius: 5px;
+}
+
+
+.SideRight div
+{
+  display: inline-block;
+  box-shadow: 0 0 0 2.5px rgb(45, 106, 161);
+  margin: 0% 4% 8%;
+  padding: 1% ;
+  height: 47%;
+
+}
+
+.SideRight  img
+{
+  max-width: 50%;
+  float: left;
+  margin: 0 3% 0 0;
+  border-radius: 5px;
+}
+
+
+.variant p, hr, h4
+{
+  text-align: center;
+  color: white;
+}
+
+.variant h4
+{
+  margin: 1% 1% 1%;
+  font-family: Georgia;
+  font-size: 1.15em;
+}
+
+.variant p
+{
+  margin: 1% 1% 1%;
+  font-family: Georgia;
+  font-size: 1.1em;
+}
+
+
+.BlockCircle
+{
+   /* animation-name: Circleanimation;*/
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes Circleanimation 
+{
+    
+    0% 
+    {
+      transform:  skewY(0deg);
+    }
+
+    70% 
+    {
+      transform:  skewY(0deg);
+    }
+    
+    85% 
+    {
+        transform: skewY(8deg);
+    }
+    100% 
+    { 
+     transform:  skewY(0deg);
+    }
+}
+
+@media only screen and (max-width : 1260px)
+{
+  
+   .variant
+   {
+     left : 1%;
+     width:  97%;
+   }
+   .variant h4
+   {
+      font-size: 1.1em;
+   }
+  .variant p
+  {
+
+    font-size: 1em;
+  }
+  .variant img
+   {
+      margin: 1% 1% 0;
+      max-width: 250px;
+   }
+
+}
+
+@media only screen and (max-width : 991px)
+{
+  
+   .fon
+   {
+      top: 222%;
+   }
+
+   .variant img
+   {
+      margin: 3% 1% 0;
+      max-width: 200px;
+   }
+
+   .variant 
+   {
+      top: 10%;
+   }
+
+   .SideRight 
+   {
+      left : 49%;
+      width: 55%;
+
+   }
+
+  
+   .SideLeft 
+   {
+      
+      left : -3%;
+      width: 55%;
+   }
+}
+
+
+@media only screen and (max-width : 717px)
+{ 
+    .fon
+    {
+      height: 100%;
+
+    }
+    
+    .SideLeft, .SideRight
+    {
+
+      left: 0;
+      width: 100%;
+      height: 45%;
+    }
+    .SideRight
+    {
+      top: 50%;
+    }
+    .variant img
+    {
+      margin: 0 0 0;
+      max-width: 300px;
+    }
+    .variant p
+    {
+      font-size: 1.1em;
+    }
+  
+    .variant h4
+    {
+      font-size: 1.29em;
+    }
+
+
+
+    .SideLeft div
+    {
+        margin: 2% 0;
+    }
+    .SideRight div
+    {
+        margin: 2% 0;
+    }
+    .variant
+    {
+      top: 0%;
+      height: 100%;
+    }
+
+    @keyframes Circleanimation 
+    {
+      
+      0% 
+      {
+        transform:  skewY(0deg);
+      }
+
+      70% 
+      {
+        transform:  skewY(0deg);
+      }
+      
+      85% 
+      {
+          transform: skewY(2deg);
+      }
+      100% 
+      { 
+       transform:  skewY(0deg);
+      }
+    }
+
+}
+
+@media only screen and (max-width : 450px)
+{
+    .fon 
+    {
+        top: 292%;
+    }
+    .variant img
+    {
+      margin: 0 0 0;
+      max-width: 200px;
+    }
+    .variant p
+    {
+      font-size: 0.9em;
+    }
+  
+    .variant h4
+    {
+      font-size: 1em;
+    }
+    .SideRight
+    {
+
+      top: 50%;
+    }
+
+
+}
+
+
+@media only screen and (max-width : 350px)
+{
+
+  .SideRight
+    {
+
+      top: 7%;
+    }
+
+    .SideLeft
+    {
+
+      top: 51%;
+    }
+
+  .variant img
+  { 
+     margin: 0 0%;
+      max-width: 100%;
+      float: none;
+  }
+  .FonImg
+  {
+    display: none;
+  }
+  .fon
+  {
+    height: 200%;
+  }
+  .variant p
+    {
+      font-size: 1.12em;
+    }
+  
+    .variant h4
+    {
+      font-size: 1.18em;
+    }
+}
+
+
+@media only screen and (max-width : 220px)
+{
+    .fon
+    {
+      height: 180%;
+    }
+    .fon
+    {
+
+        top: 264%;
+
+    }
+    .quesion
+    {
+      font-size: 2.2em;
+      margin: 1% 0;
+    }
+    .SideRight, .SideLeft
+    {
+
+      height: 47%;
+    }
+
+    .SideLeft
+    {
+
+      top: 52%;
+    }
+}
+
+/*-------------------------------------------------------------------
+
+ *****************************____Footer____*************************
+
+ ------------------------------------------------------------------*/
+  
+footer
+{
+  display: inline-block;
+  background: radial-gradient(#323131, #000000);
+  width: 100%;
+}
+
+footer p
+{
+  margin: 0%;
+  color: white;
+  font-family: Georga;
+  font-size: 2.17em;
+  
+}
+
+footer div
+{
+  display: inline-block;
+  background: radial-gradient(#000031, #000000);
+  margin: 1% 0% 1% 8%;
+  padding: 1%;
+  border-radius: 10%;
+ 
+}
+
+
+footer button
+{
+  position: absolute;
+  top: 34%;
+  left: 70%;
+  width: 20%;
+  height:  30%;
+  font-size: 1.4em;
+}
+
+
+.BlockContact
+{
+ /* animation-name: Contactanimation;*/
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes Contactanimation 
+{
+    
+    0% 
+    {
+      transform:  translateX(0px);
+    }
+
+    70% 
+    {
+      transform:  skewY(0deg);
+    }
+    
+    85% 
+    {
+        transform:  translateX(-60px);
+    }
+    100% 
+    { 
+       transform:  skewY(0deg);
+    }
+}
+
+@media only screen and (max-width : 991px)
+{
+  
+   footer
+   {
+      top: 307%;
+      height: 40%;
+   }
+
+   footer div
+   {
+      margin: 5% 3%;
+   }
+
+
+}
+@media only screen and (max-width : 717px)
+{
+
+  footer
+    {
+        top: 322%;  
+    } 
+}
+@media only screen and (max-width : 590px)
+{
+    footer
+    {
+        top: 322%;  
+    }
+
+
+}
+
+
+@media only screen and (max-width : 450px)
+{
+    footer
+    {
+
+        top: 392%;
+        height: 30%;
+    }
+    footer p
+    {
+
+      font-size: 1.65em;
+
+    }
+
+
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+            transform:  translateX(-40px); 
+          
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+
+}
+
+@media only screen and (max-width : 350px)
+{ 
+
+    footer
+    {
+
+        top: 481%;
+        height: 20%;
+    }
+    footer p
+    {
+      font-size: 1em;
+    }
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+
+          transform:  translateX(-25px); 
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+
+}
+@media only screen and (max-width : 220px)
+{
+
+    footer
+    {
+
+       top: 440%;
+       height: 12%;
+
+    }
+    footer p
+    {
+
+      font-size: 0.68em;
+    }
+
+    @keyframes Contactanimation 
+    {
+        
+        0% 
+        {
+          transform:  translateX(0px);
+        }
+
+        70% 
+        {
+          transform:  skewY(0deg);
+        }
+        
+        85% 
+        {
+
+         transform:  translateX(-15px); 
+        }
+        100% 
+        { 
+           transform:  skewY(0deg);
+          
+        }
+    }
+}
